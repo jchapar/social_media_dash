@@ -184,6 +184,92 @@ main {
       }
     }
   }
+
+  // Over view section
+  .overview {
+    .title {
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    .overview-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      .card {
+        background: $dark-card-bg;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 15rem;
+        border-radius: 5px;
+
+        .left-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          .title {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+          }
+
+          .number {
+            color: #fff;
+            font-size: 1.7rem;
+          }
+        }
+        .right-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+
+          .negative,
+          .positive {
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+          }
+
+          .negative {
+            color: red;
+          }
+
+          .positive {
+            color: green;
+          }
+
+          .fab {
+            margin-bottom: 0.5rem;
+            margin-right: 0.5rem;
+            font-size: 1.5rem;
+
+            &.fa-facebook-square {
+              color: $facebook-color;
+            }
+            &.fa-instagram {
+              color: #df4996;
+            }
+            &.fa-twitter {
+              color: $twitter-color;
+            }
+          }
+          span {
+            .fa-circle {
+              color: $youTube-color;
+            }
+
+            .fa-youtube {
+              color: #000;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Attribution
