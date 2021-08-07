@@ -85,4 +85,86 @@
       }
     }
   }
+
+  // Section: Summary
+  .summary {
+    &.grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+
+      .grid-item {
+        background: var(--primary-card-bg);
+        // height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        border-radius: 0.5rem;
+
+        &:first-child {
+          border-top: 0.3rem solid $facebook;
+        }
+        &:nth-child(2) {
+          border-top: 0.3rem solid $twitter;
+        }
+        &:nth-child(3) {
+          border-top: 0.3rem solid $instagram;
+        }
+        &:last-child {
+          border-top: 0.3rem solid $youTube;
+        }
+
+        .username {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 1rem;
+          p {
+            font-size: 1.5rem;
+            color: var(--blue-text);
+            margin-left: 1rem;
+          }
+        }
+
+        .followers {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 3rem;
+          .large-text {
+            color: var(--white-text);
+            font-size: 6rem;
+            font-weight: bold;
+          }
+          .lead {
+            color: var(--blue-text);
+            font-size: 1.4rem;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+            font-weight: 100;
+          }
+        }
+
+        .status {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1.5rem;
+
+          p {
+            margin-left: 0.5rem;
+            color: var(--white-text);
+            font-size: 1.2rem;
+
+            &.green {
+              color: $lime-green;
+            }
+            &.red {
+              color: $bright-red;
+            }
+          }
+        }
+      }
+    }
+  }
 }
