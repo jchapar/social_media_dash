@@ -29,10 +29,10 @@ Users should be able to:
 
 ### Screenshot
 
-![./images/dark-desktop](./images/dark-desktop)
-![./images/light-desktop](./images/light-desktop)
-![./images/dark-mobile](./images/dark-mobile)
-![./images/light-mobile](./images/light-mobile)
+![](./dist/images/dark-desktop.png)
+![](./dist/images/light-desktop.png)
+![](./dist/images/dark-mobile.png)
+![](./dist/images/light-mobile.png)
 
 ### Links
 
